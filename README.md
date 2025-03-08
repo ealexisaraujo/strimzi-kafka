@@ -223,8 +223,9 @@ If you encounter issues:
 
 The key to avoiding the issues we encountered is setting the correct replication factors in the Kafka configuration for a single-broker setup.
 
-Limitations of Single-Broker Setup
-No high availability: If the broker goes down, the entire Kafka cluster is unavailable
-No data replication: Data is stored on a single broker, increasing the risk of data loss
-Limited scalability: Cannot distribute load across multiple brokers
-Not suitable for production: This setup should only be used for development and testing
+### Limitations of Single-Broker Setup
+
+* **No high availability:** If the broker goes down, the entire Kafka cluster is unavailable
+* **No data replication:** Data is stored on a single broker, increasing the risk of data loss
+* **Limited scalability:** Cannot distribute load across multiple brokers
+* **Not suitable for production:** This setup should only be used for development and testing
